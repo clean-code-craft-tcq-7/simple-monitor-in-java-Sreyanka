@@ -1,7 +1,7 @@
 package vitals;
 
 public class BatteryTest {
-	public static void assertBatteryTest() {
+	public static void assertBatteryParameters() {
 		BatteryControl batterycontrol = new BatteryControl();
 		assert (batterycontrol.batteryIsOk(25, 70, 0.7f) == true);
 		assert (batterycontrol.batteryIsOk(50, 85, 0.0f) == false);
